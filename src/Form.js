@@ -29,6 +29,7 @@ function Form(props) {
             {/* ////////// TEXT INPUTS ////////// */}
             <label autoComplete="off">Name:&nbsp;
           <input
+                    data-cy_username_input='cy_username_input'
                     value={values.name}
                     onChange={onInputChange}
                     name='name'
@@ -36,6 +37,7 @@ function Form(props) {
                 /></label>
             <label>Email:&nbsp;
           <input
+
                     value={values.email}
                     onChange={onInputChange}
                     name='email'
@@ -55,6 +57,7 @@ function Form(props) {
 
             {/* ////////// CHECKBOXES ////////// */}
             <label><input
+                data-cy_checkbox_input='cy_checkbox_input'
                 checked={values.termsOfService}
                 onChange={onCheckboxChange}
                 name='termsOfService'
